@@ -1,7 +1,7 @@
 .App {
   
   display: grid;
- grid-template-columns: auto auto auto;
+ grid-template-columns: 45% 45%;
 }
 .App > div{
   

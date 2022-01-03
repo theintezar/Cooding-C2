@@ -14,7 +14,7 @@ const MenuCard = ({menuData}) => {
                    <img src={currEle.image}></img>
 
                        <span className='sA'>{currEle.id}</span>
-                       <span>{currEle.name}</span>
+                       <span className='m'>{currEle.name}</span>
                        <span>{currEle.price}</span>
                        <span>{currEle.description}</span>
                       

@@ -6,14 +6,28 @@ import MenuCard from './MenuCard';
 const Restorent = () => {
     const [menuData, setMenuData] = useState(Menu);
     //console.log(menuData);
+    const filterItem = (catogery) =>{
+const updateList = Menu.filter((curEle) =>{
+     return curEle.name === catogery;
+    
+
+});
+setMenuData(updateList)
+ }
+
+
+   
     return (
         <>
-        <nav>
+       <nav>
             <div>
-                <button>add</button>
+                <button onClick={() => filterItem ("noodle")}>sort by noodle</button>
+                <button onClick={() => filterItem ("maggie")}>sort by maggie</button>
+                <button onClick={() => filterItem ("pizza")}>sort by pizza</button>
+                
             </div>
         </nav>
-   <MenuCard menuData= {menuData}></MenuCard>
+             <MenuCard menuData= {menuData}></MenuCard>
         </>
     )
 }

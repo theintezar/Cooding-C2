@@ -5,6 +5,7 @@ import Restorent from './components/Basic/Restorent';
 function App() {
   return (
     <div>
+     
     <div className='App'>
     <Restorent></Restorent>
     </div>
