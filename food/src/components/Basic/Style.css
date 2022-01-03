@@ -1,0 +1,14 @@
+img{
+    width: 100%;
+}
+
+span{
+    margin: 20px;
+}
+.sA{
+   
+    padding: 6px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}

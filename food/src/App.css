@@ -1,0 +1,14 @@
+.App {
+  
+  display: grid;
+ grid-template-columns: auto auto auto;
+}
+.App > div{
+  
+  background-color: rgb(213, 213, 226);
+  margin: 30px;
+  
+}
+
+
+
