@@ -8,15 +8,15 @@ const MenuCard = ({menuData}) => {
         <>
         { menuData.map((currEle) => {
                 return (< >
-                     <div className='a' key={currEle.id}>
+                     <div className='c' key={currEle.id}>
+                   <div className='a'>
                    <div className='b'>
-                   <div className='c'>
                    <img src={currEle.image}></img>
 
                        <span className='sA'>{currEle.id}</span>
                        <span className='m'>{currEle.name}</span>
                        <span>{currEle.price}</span>
-                       <span>{currEle.description}</span>
+                      <div className='topm'><span>{currEle.description}</span></div> 
                       
                    </div>
                </div>

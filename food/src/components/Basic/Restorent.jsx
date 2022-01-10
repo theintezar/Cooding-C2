@@ -2,6 +2,8 @@ import React from 'react'
 import { Menu } from './menuApp';
 import { useState } from 'react';
 import MenuCard from './MenuCard';
+import './Style.css';
+
 
 const Restorent = () => {
     const [menuData, setMenuData] = useState(Menu);
@@ -20,14 +22,24 @@ setMenuData(updateList)
     return (
         <>
        <nav>
-            <div>
-                <button onClick={() => filterItem ("noodle")}>sort by noodle</button>
-                <button onClick={() => filterItem ("maggie")}>sort by maggie</button>
-                <button onClick={() => filterItem ("pizza")}>sort by pizza</button>
+          
+                <button onClick={() => filterItem ("Noodle")}>sort by noodle</button>
+                <button onClick={() => filterItem ("Maggie")}>sort by maggie</button>
+                <button onClick={() => filterItem ("Pizza")}>sort by pizza</button>
+                <form className='frm'>
+            <h3>Add Items</h3>
+
+                    <input placeholder='name of food'></input>
+                    <input placeholder='Decription'></input>
+                    <input placeholder='price'></input>
+                    <input placeholder='image link'></input>
+                    <button>Add</button>
+                </form>
                 
-            </div>
+           
         </nav>
              <MenuCard menuData= {menuData}></MenuCard>
+
         </>
     )
 }

@@ -1,14 +1,20 @@
 .App {
-  
-  display: grid;
- grid-template-columns: 45% 45%;
+text-align: center;
+display: grid;
+grid-template-columns: auto auto auto;
 }
+
 .App > div{
-  
   background-color: rgb(213, 213, 226);
-  margin: 30px;
+
+  margin: 10px;
+
   
 }
+
+
+
+
 
 
 
